@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap');
+:root {
+    /* Colores principales */
+    --color-black: #151A1E;
+    --color-white: #FFFFFF;
+    --color-white-warm: #F1EFEA;
+
+    /* Color corporativo */
+    --color-primary: #FF791F;
+
+    /* Colores secundarios */
+    --color-gray: #737B83;
+    --color-gray-light: #D1D5DB;
+    --color-gray-dark: #252C35;
+
+    /* Fondos */
+    --background-dark: #151A1E;
+    --background-light: #F1EFEA;
+
+    /* Textos */
+    --text-dark: #151A1E;
+    --text-light: #FFFFFF;
+    --text-secondary: #737B83;
+
+    /* Tipografías */
+    --font-heading: 'Sora', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+body {
+    font-family: var(--font-body);
+    background-color: var(--background-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+}
+
+button, nav {
+    font-family: var(--font-heading);
+}
+/* SOLUCION IMPORTANTE(!APRENDER) --> PARA QUITAR ESPACIOS DEL HEADER */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 20px 50px;
+}
+header img{
+    width: 200px;
+}
+nav {
+    display: flex;
+    gap: 40px;
+}
+nav a {
+    text-decoration: none;
+    color: var(--color-white);
+    /* Para hacer un efecto al pasar por encima */
+    transition: color 0.3s ease;
+    position: relative;
+}
+nav a:hover{
+    color: var(--color-primary);
+}
+/* Separador entre nav y boton configurar */
+.separador {
+    width: 1px;
+    height: 30px;
+    background-color: var(--color-gray);
+}
+.btn-configurar{
+    text-decoration: none;
+    color: var(--text-light);
+    background-color: var(--color-primary);
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.btn-configurar:hover {
+    padding: 12px;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: clamp(300px, 40vw, 750px);
+    object-fit: cover;
+    object-position: center center;
+}
+
+.hero-content {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn-descubrir{
+    text-decoration: none;
+    width: 200px;
+    color: var(--color-gray-dark);
+    background-color: var(--color-primary);
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.btn-descubrir:hover {
+    padding: 10px;
+}
+
+/* Moviles - RESPONSIVE */

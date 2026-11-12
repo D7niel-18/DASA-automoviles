@@ -3,7 +3,7 @@
 **Proyecto:** DASA — Landing page automovilística  
 **Fase:** 1 — Diseño y planificación  
 **Tipo de proyecto:** Sitio web corporativo / Landing page  
-**Tecnologías previstas:** HTML5, SCSS y JavaScript  
+**Tecnologías previstas:** HTML5, CSS y JavaScript  
 **Estado:** Planificación
 
 ---
@@ -213,3 +213,12 @@ Al finalizar esta primera fase se deberá disponer de:
 **Fin de la Fase 1 — Diseño y planificación**
 
 El siguiente paso será comenzar la **Fase 2 — Desarrollo de la estructura HTML semántica**, trasladando el diseño definido a código.
+--
+
+# DASA — Fase 2: Desarrollo de la estructura HTML semántica y directorios
+assets/images	Fotografías de vehículos y recursos visuales.
+assets/icons	Iconos de la interfaz.
+assets/fonts	Tipografías locales, si fueran necesarias.
+css/main.css	CSS principal
+css/light.css   CSS modo claro
+js	Funcionalidades JavaScript.
